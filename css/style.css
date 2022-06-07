@@ -19,27 +19,9 @@ body{
 /************HEADER***************/
 
 header{
-    display: block;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    background: rgb(16,36,134);
-    background: linear-gradient(160deg, rgba(16,36,134,1) 4%, rgba(32,37,37,1) 53%, rgba(22,23,23,1) 82%, rgba(0,0,0,1) 100%);
-    padding: .6rem 0px;
-    height: 6rem;
     font-family: 'koulen';
-    opacity: 95%;
+    font-size: 1.5rem;
 }
-
-header nav{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
 
 .header__logo{
     width: 4rem;
@@ -47,169 +29,24 @@ header nav{
     filter: invert(1);
 }
 
-.navbar{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
+header ul li{
+    border-radius: 10%;
 }
 
-header nav ul li{
-    padding: 0rem 0.5rem;
-    border-radius: 15%;
-}
-
-header nav ul li:hover{
+header ul li:hover{
     background-color: rgba(2, 2, 19, 0.288);
 }
 
-header nav ul li a{
-    display: block;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
+
 
 header nav ul li a:hover{
     color: rgba(153, 153, 161, 0.664);
 }
 
-.bouncetop1 {
-	-webkit-animation: bounce-top 0.9s both;
-	        animation: bounce-top 0.9s both;
-}
-
-.bouncetop2 {
-	-webkit-animation: bounce-top 0.9s 0.1s both;
-	        animation: bounce-top 0.9s 0.1s both;
-}
-
-.bouncetop3 {
-	-webkit-animation: bounce-top 0.9s 0.2s both;
-	        animation: bounce-top 0.9s 0.2s both;
-}
-
-.bouncetop4 {
-	-webkit-animation: bounce-top 0.9s 0.3s both;
-	        animation: bounce-top 0.9s 0.3s both;
-}
-
-.bouncetop5 {
-	-webkit-animation: bounce-top 0.9s 0.4s both;
-	        animation: bounce-top 0.9s 0.4s both;
-}
-
-@-webkit-keyframes bounce-top {
-    0% {
-      -webkit-transform: translateY(-45px);
-              transform: translateY(-45px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      opacity: 1;
-    }
-    24% {
-      opacity: 1;
-    }
-    40% {
-      -webkit-transform: translateY(-24px);
-              transform: translateY(-24px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    65% {
-      -webkit-transform: translateY(-12px);
-              transform: translateY(-12px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    82% {
-      -webkit-transform: translateY(-6px);
-              transform: translateY(-6px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    93% {
-      -webkit-transform: translateY(-4px);
-              transform: translateY(-4px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    25%,
-    55%,
-    75%,
-    87% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    100% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-      opacity: 1;
-    }
-  }
-  @keyframes bounce-top {
-    0% {
-      -webkit-transform: translateY(-45px);
-              transform: translateY(-45px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      opacity: 1;
-    }
-    24% {
-      opacity: 1;
-    }
-    40% {
-      -webkit-transform: translateY(-24px);
-              transform: translateY(-24px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    65% {
-      -webkit-transform: translateY(-12px);
-              transform: translateY(-12px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    82% {
-      -webkit-transform: translateY(-6px);
-              transform: translateY(-6px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    93% {
-      -webkit-transform: translateY(-4px);
-              transform: translateY(-4px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    25%,
-    55%,
-    75%,
-    87% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    100% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-      opacity: 1;
-    }
-}
-  
-
 
 /****************MAIN********************/
 
 main{
-    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     font-family: 'koulen';
@@ -232,7 +69,7 @@ main{
 .hero__titulo{
     position: absolute;
     left: 10px;
-    bottom: 4rem;
+    bottom: 5rem;
     color: white;
     font-size: 5rem;
     font-weight: normal;
@@ -248,16 +85,18 @@ main{
 }
 
 
-/********index section grid*********/
+/**********index section***********/
 
 
 .container__index{ 
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-            "img1 txt1"
-            "txt2 img2";
+    display: flex;
+    justify-content: center;
+    height: 40vw;
+}
+
+.imgCarouselIndex{
+    height: 40vw;
+    border-radius: 5%;
 }
 
 .img1{grid-area: img1;}
