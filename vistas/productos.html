@@ -48,45 +48,106 @@
 
         <h1 class="h1__titulo">PRODUCTOS</h1>
 
-        <div class="container__producto">
-          <div class="articulo1">
-              <p class="titulo__grid">Modelo Murcielago</p>
-            </div>
-            <div class="imgprincipal1">
-                <img class="imagenAncho100" src="../assets/murcielago1.png" alt="">
-            </div>
-            <div class="imagensec1 flxCenter">
-                <img class="imagenAncho100" src="../assets/murcielago.jpg" alt="vistas UAV murcielago">
-            </div>
-            <div class="caracteristicas1 textoEnGrid">
-                <ul class="lista__vertical">
-                    <li class="lista__vertical--elemento">Velocidad maxima: 60km/h</li>
-                    <li class="lista__vertical--elemento">Tiempo de vuelo: 3h</li>
-                    <li class="lista__vertical--elemento">Despegue / aterrizaje: vertical</li>
-                    <li class="lista__vertical--elemento">Autonomia: 100Km</li>
-                </ul>
+
+        <div class="listaCaracteristicas">
+          <ul class="list-group badge fs-6" style="opacity: .8;">
+            <li class="list-group-item fs-2 bg-primary text-wrap">Caracteristicas de nuestros UAV ALBATROS y BAT</li>
+            <li class="list-group-item">Misiones totalmente autonomas, incluso mas alla del rango de comunicacion</li>
+            <li class="list-group-item">Comunicacion por radio hasta 50 km. Si esta disponible una red 4G/LTE puede permitir un alcance ilimitado.</li>
+            <li class="list-group-item">Rango de video HD de 50 KM (o ilimitado a traves de LTE/4G)</li>
+            <li class="list-group-item">Software de control que permite que el sistema siga de manera segura e inteligente a un ser humano, un automovil, una embarcacion o incluso a otro UAV.</li>
+            <li class="list-group-item">Tecnologia inteligente y un rendimiento potente que permite mapear y realizar relevamientos topograficos faciles y productivos.</li>
+            <li class="list-group-item">Diseño modular que permite conectar varias cargas utiles al UAV en cualquier momento.</li>
+            <li class="list-group-item">Capacidad de volar de manera segura con vientos de hasta 45km/h y lluvia moderada.</li>
+            <li class="list-group-item">El UAV se monitorea a si mismo durante el vuelo. Si es incapaz de mantener un vuelo seguro, abortara la mision y volvera a un punto seguro.</li>
+            <li class="list-group-item">Resistente al calor o al frio extremos, lo que lo convierte en la herramienta ideal para la deteccion y respuesta a incendios forestales.</li>
+            <li class="list-group-item">Despliegue rapido 10 minutos: los aviones tripulados requieren mas tiempo y planificacion logistica antes de que puedan estar en el aire y trabajar.</li>
+            <li class="list-group-item">Sonido imperceptible a partir de 20mts de distancia (menor a 20dB)</li>
+          </ul>
+        </div>
+
+
+        
+        <div class="container" style="padding: 15px;">
+          <div class="row align-items-center">
+            
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="btn btn-primary">ALBATROS</h5>
+                </div>
+                <img src="../assets/albatros.jpg" class="card-img-top imgProducto" alt="...">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Caracteristicas distintivas modelo ALBATROS
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="listaCaracteristicas--particulares">
+                          <ul class="list-group">
+                            <li class="list-group-item">Carga util de hasta 2kg</li>
+                            <li class="list-group-item">Autonomia 200 km</li>
+                            <li class="list-group-item">Tiempo de vuelo hasta 5 horas</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <hr class="lineah">
-            
-            <div class="articulo2">
-                <p class="titulo__grid" >Modelo Albatros</p>
+
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="btn btn-primary">BAT</h5>
+                </div>
+                <img src="../assets/murcielago.jpg" class="card-img-top imgProducto" alt="...">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Caracteristicas distintivas modelo BAT
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="listaCaracteristicas--particulares">
+                          <ul class="list-group">
+                            <li class="list-group-item">Capacidad de despegue y aterrizaje vertical</li>
+                            <li class="list-group-item">Carga util de hasta 1.2kg</li>
+                            <li class="list-group-item">Autonomia 150 km</li>
+                            <li class="list-group-item">Tiempo de vuelo hasta 110 minutos</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>      
+              </div>
             </div>
-            <div class="imagenprincipal2 flxCenter">
-                <img class="imagenAncho100" src="../assets/albatros.gif" alt="">
-            </div>
-            <div class="imagensec2">
-                <img class="imagenAncho100" src="../assets/albatros.jpg" alt="">
-            </div>
-            <div class="caracteristicas2 textoEnGrid">
-                <ul class="lista__vertical">
-                    <li class="lista__vertical--elemento">Velocidad maxima: 50km/h</li>
-                    <li class="lista__vertical--elemento">Tiempo de vuelo: 4h</li>
-                    <li class="lista__vertical--elemento">Despegue / aterrizaje: 10m</li>
-                    <li class="lista__vertical--elemento">Autonomia: 180Km</li>
-                </ul>
-            </div>
+
+          </div>
         </div>
+
+  
+        
+
+
+
+
+
+
+
+
+
+
+
+
 
     </main>
 
