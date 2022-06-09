@@ -115,7 +115,6 @@ main{
     align-items: center;
 }
 
-
 .imgProducto{
     height: 70%;
     width: 100%;
@@ -128,35 +127,22 @@ main{
 
 
 
-/***********Clientes section grid***********/
+/***********Clientes section***********/
 
-.container__clientes{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 20rem;
-    padding: 1rem;
-    grid-gap: 10px;
-    overflow: hidden;
+
+.contenedorClientes{
+    height: 18rem;
+
 }
-
 .galeria__img{
-    width: 100%;
-    height: 100%;
+    width: 99%;
+    height: 99%;
     object-fit: cover;
 }
-
 
 .galeria__img:hover{
     object-fit: contain;
     filter: drop-shadow(rgb(6, 3, 12) 5px 5px);
-}
-
-.galeria__item:nth-child(1){
-    grid-column-start: span 2;
-}
-
-.galeria__item:nth-child(7){
-    grid-column-start: span 2;
 }
 
 
@@ -171,35 +157,16 @@ main{
 
 /**********Formulario de contacto************/
 
-.container__contacto{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
-.formGrid1 {
-    display: grid;
-    grid-gap: 1.5rem;
-}
-     
-.formGrid2 {
-    grid-template-columns: 1fr 1fr;   
+.logoContacto{
+    width: 30vw;
 }
    
-.formGrid3 {
-    grid-template-columns: auto auto auto;
-    align-items: center;
-}
-
-.formulario{
-    padding: 2rem;
-    font-family: 'koulen';
-}
 
 .formulario select,
 .formulario input,
 .formulario textarea,
 .formulario button {
-    width: 100%;
     line-height: 1.5;
     padding: 1rem .75rem;
     border: 1px solid black;
@@ -213,14 +180,10 @@ main{
     opacity: 1;
 }
   
-.ul__form {
-    list-style: none;
-}
-
    
 .formulario textarea {
     resize: none;
-    height: 12rem;
+    height: 10rem;
 }
    
 
@@ -249,9 +212,23 @@ footer div a img{
         font-size: 8px;
     }
 
-    .container__contacto{
-        grid-template-columns:1fr;
+
+    .formulario select,
+    .formulario input,
+    .formulario textarea,
+    .formulario button {
+    font-size: 2rem;
+    }  
+}
+
+
+
+/**575px**/
+@media screen and (max-width: 575px) {   
+    html{
+        font-size: 8px;
     }
+
 
     .logoContacto{
         display: none;
@@ -267,15 +244,10 @@ footer div a img{
 }
 
 
-
 /**480px**/
 @media screen and (max-width: 480px) {   
     html{
         font-size: 6px;
-    }
-
-    .container__contacto{
-        grid-template-columns:1fr;
     }
 
     .logoContacto{
@@ -289,9 +261,6 @@ footer div a img{
         font-size: 5px;
     }
 
-    .header__logo{
-        display: none;
-    }
 
     header nav{
         justify-content: center;
@@ -307,56 +276,7 @@ footer div a img{
         font-size: 1.5rem;
     }
     
-
-    .container__producto{
-        grid-template-columns: 100%; 
-        grid-template-areas: 
-            "articulo1"
-            "imgprincipal1"
-            "imagensec1"
-            "caracteristicas1"
-            "lineah"
-            "articulo2"
-            "imagenprincipal2"
-            "imagensec2"
-            "caracteristicas2";
-    }
-
-    .container__solucion{
-        grid-template-columns: 1fr;
-        gap: 0rem 0rem; 
-        grid-template-areas: 
-        "areaSolucion1"
-        "areaSolucion2"
-    }
-
-    .areaSolucion1{grid-area: areaSolucion1; }
-    .areaSolucion2{grid-area: areaSolucion2; }    
-
-    .container__clientes{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .galeria__item:nth-child(6){
-        grid-column-start: span 2;
-    }
-    
-    .galeria__item:nth-child(10){
-        grid-column-start: span 2;
-    }
-    
-
-
-    .container__contacto{
-        grid-template-columns: 1fr;
-    }
-
-    .formGrid2 {
-        grid-template-columns: 1fr;
-        gap: 0rem;
-    }
-
-
+ 
     .logoContacto{
         display: none;
     }

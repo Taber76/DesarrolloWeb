@@ -14,7 +14,7 @@
 
     
     <header> 
-        <nav class="navbar fixed-top navbar-expand-lg bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg bg-secondary">
             <div class="container-fluid">
               <a class="navbar-brand" href="../index.html"><img src="../assets/Logo.png" alt="Logo" class="header__logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,57 +43,48 @@
         </nav>
     </header>
     
-    <hr class="azul">
+
 
     <main>
-
-        <h1 class="h1__titulo">CONTACTO</h1>
-  
-        <div class="container__contacto">
-
-            <img src="../assets/Logo.png" alt="" class="textoEnGrid logoContacto">
-
-            <form class="formulario textoEnGrid" action="" method="get" enctype="text/plain" >
-                <div class="container">
-                    <ul class="ul__form">
-                        <li>
-                            <select>
+ 
+        <div class="container-fluid fs-5 formulario">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="../assets/Logo.png" alt="" class="logoContacto">
+                </div>
+                <form class="col-sm-8" action="" method="get" enctype="text/plain" >
+                    <div class="container-fluid">
+                        <div class="row">
+                            <select class="col-12">
                                 <option selected disabled>-- Elija una opcion --</option>
                                 <option>Coordinar demostracion</option>
                                 <option>Pedir cotizacion</option>
                                 <option>Otros</option>   
-                            </select>                                 
-                        </li>    
-                        <li>
-                            <div class="formGrid1 formGrid2">
-                                <input type="text" id="nombre" placeholder="Nombre *" required>  
-                                <input type="text" id="apellido" placeholder="Apellido *" required>
-                            </div>
-                        </li>    
-                        <li>
-                            <div class="formGrid1 formGrid2">
-                                <input type="email" id="email" placeholder="Email *" required>  
-                                <input type="tel" id="tel" placeholder="Telefono">
-                            </div>
-                        </li>    
-                        <li>
-                  	        <textarea id="consulta" placeholder="Mensaje *" required></textarea>
-                        </li>    
-                        <li>
-                            <div class="formGrid1 formGrid3">
-                                <div class="">CAMPOS REQUERIDOS *</div>
-                                <button class="" type="submit">
-                                    <span class="">ENVIAR</span>
-                                </button>
-                                <button class="" type="reset">
-                                    <span class="">BORRAR</span>
-                                </button> 
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </form>
-        
+                            </select>
+                        </div>  
+                        <div class="row justify-content-between">
+                            <input class="col-sm-5" type="text" id="nombre" placeholder="Nombre *" required>  
+                            <input class="col-sm-5" type="text" id="apellido" placeholder="Apellido *" required>
+                        </div>
+                        <div class="row justify-content-between">
+                            <input class="col-sm-5" type="email" id="email" placeholder="Email *" required>  
+                            <input class="col-sm-5" type="tel" id="tel" placeholder="Telefono">
+                        </div>     
+                        <div class="row">
+                            <textarea class="col-12" id="consulta" placeholder="Mensaje *" required></textarea>
+                        </div>
+                        <div class="row" style="color: black;">CAMPOS REQUERIDOS *</div>
+                        <div class="row">
+                            <button class="col-3" type="submit">
+                                <span class="">ENVIAR</span>
+                            </button>
+                            <button class="col-3" type="reset">
+                                <span class="">BORRAR</span>
+                            </button> 
+                        </div>          
+                    </div>
+                </form>
+            </div>    
         </div>
 
     </main>
