@@ -126,6 +126,7 @@ main{
 
 
 
+
 /***********Clientes section***********/
 
 
@@ -192,32 +193,15 @@ main{
 footer{
     padding-top: 1rem;
     display: flex;
-    justify-content: space-between;
-    color: white;
+    justify-content: right;
 }
 
 footer div a img{
-    padding: 0.2rem;
-    height: 3rem;
+    padding: 0.5rem;
+    height: 5rem;
     filter: invert(1);
 }
 
-.animacionFooter:hover{
-    animation:  text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-
-/*Animista*/
-@keyframes text-focus-in {
-    0% {
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      filter: blur(0px);
-      opacity: 1;
-    }
-  }
-  
 
 
 /******************MEDIA QUERIES************/
