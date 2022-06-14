@@ -61,7 +61,7 @@ main{
 }
 
 
-.hero__titulo{
+.heroTitulo{
     position: absolute;
     left: 10px;
     bottom: 5rem;
@@ -70,7 +70,7 @@ main{
     font-weight: normal;
 }
 
-.hero__subtitulo{
+.heroSubtitulo{
     position: absolute;
     left: 10px;
     bottom: 2.5rem;
@@ -83,7 +83,7 @@ main{
 /**********index section***********/
 
 
-.container__index{ 
+.containerIndex{ 
     display: flex;
     justify-content: center;
     height: 40vw;
@@ -124,7 +124,11 @@ main{
 
 /***********soluciones section***********/
 
-
+.imgSolucion{
+    height: 70%;
+    width: 100%;
+    border-radius: 5%;
+}
 
 /***********Clientes section***********/
 
