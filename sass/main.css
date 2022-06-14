@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  background: #2f302f;
+  background: linear-gradient(160deg, #2f302f 4%, #202525 53%, #161717 82%, #153171 100%);
+}
+
+/************HEADER***************/
+header {
+  font-family: 'koulen';
+  font-size: 1.5rem;
+}
+
+.header__logo {
+  width: 4rem;
+  height: 4rem;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+header ul li {
+  border-radius: 10%;
+}
+
+header ul li:hover {
+  background-color: rgba(2, 2, 19, 0.288);
+}
+
+header nav ul li a:hover {
+  color: rgba(153, 153, 161, 0.664);
+}
+
+/****************MAIN********************/
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'koulen';
+  display: block;
+  margin-top: 6rem;
+}
+
+/*******hero**********/
+.hero {
+  position: relative;
+  /*para poder poner absolute los subtitulos*/
+}
+
+.hero__titulo {
+  position: absolute;
+  left: 10px;
+  bottom: 5rem;
+  color: white;
+  font-size: 5rem;
+  font-weight: normal;
+}
+
+.hero__subtitulo {
+  position: absolute;
+  left: 10px;
+  bottom: 2.5rem;
+  color: white;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+/**********index section***********/
+.container__index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40vw;
+}
+
+.imgCarouselIndex {
+  height: 40vw;
+  border-radius: 5%;
+}
+
+/***********productos***********/
+.listaCaracteristicas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40rem;
+  background-image: url(../assets/fondoproductos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.listaCaracteristicas--particulares {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imgProducto {
+  height: 70%;
+  width: 100%;
+  border-radius: 5%;
+}
+
+/***********soluciones section***********/
+/***********Clientes section***********/
+.contenedorClientes {
+  height: 18rem;
+}
+
+.galeria__img {
+  width: 99%;
+  height: 99%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.galeria__img:hover {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-filter: drop-shadow(#06030c 5px 5px);
+          filter: drop-shadow(#06030c 5px 5px);
+}
+
+/***********Clases comunes main*************/
+.titulo__grid {
+  font-size: 4rem;
+  color: black;
+  text-align: center;
+}
+
+/**********Formulario de contacto************/
+.logoContacto {
+  width: 30vw;
+}
+
+.formulario select,
+.formulario input,
+.formulario textarea,
+.formulario button {
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  border: 1px solid black;
+  background: #717072;
+  font-family: 'koulen';
+  font-size: 1rem;
+}
+
+.formulario ::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.formulario :-ms-input-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.formulario ::-ms-input-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.formulario ::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.formulario textarea {
+  resize: none;
+  height: 10rem;
+}
+
+/**********FOOTER********/
+footer {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+footer div a img {
+  padding: 0.2rem;
+  height: 3rem;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.animacionFooter:hover {
+  -webkit-animation: text-focus-in 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+          animation: text-focus-in 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+/*Animista*/
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/******************MEDIA QUERIES************/
+/**768px**/
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+  .formulario select,
+  .formulario input,
+  .formulario textarea,
+  .formulario button {
+    font-size: 2rem;
+  }
+}
+
+/**575px**/
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 8px;
+  }
+  .logoContacto {
+    display: none;
+  }
+  .formulario select,
+  .formulario input,
+  .formulario textarea,
+  .formulario button {
+    font-size: 2rem;
+  }
+}
+
+/**480px**/
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 6px;
+  }
+  .logoContacto {
+    display: none;
+  }
+}
+
+/**320px**/
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 5px;
+  }
+  header nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero__titulo {
+    font-size: 3rem;
+  }
+  .hero__subtitulo {
+    font-size: 1.5rem;
+  }
+  .logoContacto {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
