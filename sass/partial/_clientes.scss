@@ -1,0 +1,12 @@
+.contenedorClientes{
+    height: 18rem;
+    .galeria__img{
+        width: 99%;
+        height: 99%;
+        object-fit: cover;
+        }
+    .galeria__img:hover{
+        object-fit: contain;
+        filter: drop-shadow(rgb(6, 3, 12) 5px 5px);
+        }
+    }

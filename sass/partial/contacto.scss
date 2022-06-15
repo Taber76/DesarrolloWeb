@@ -1,0 +1,52 @@
+.formulario{
+    .logoContacto{
+        width: 30vw;
+        @media screen and (max-width: 575px) {
+            display: none;
+        }
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+        @media screen and (max-width: 320px) {
+            display: none;
+        }
+    }
+    select{
+        line-height: 1.5;
+        padding: 1rem .75rem;
+        border: 1px solid black;
+        background: rgb(113, 112, 114);
+        font-family: 'koulen';
+        font-size: 1rem;
+        @media screen and (max-width: 768px) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width: 575px) { 
+            font-size: 2rem;
+        }
+        @media screen and (max-width: 480px) { 
+            font-size: 2rem;
+        }
+        @media screen and (max-width: 320px) { 
+            font-size: 2rem;
+        }
+    }
+    input{
+        @extend select;    
+    }
+    textarea{
+        @extend select;
+        resize: none;
+        height: 10rem;
+    }  
+    button{
+        @extend select;      
+    }
+    ::placeholder{
+        color: inherit;
+        opacity: 1;    
+    }
+}
+
+
+  

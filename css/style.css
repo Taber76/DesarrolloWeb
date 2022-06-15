@@ -1,307 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+html {
+  font-size: 15px; }
+  @media screen and (max-width: 768px) {
+    html html {
+      font-size: 8px; } }
+  @media screen and (max-width: 575px) {
+    html html {
+      font-size: 8px; } }
+  @media screen and (max-width: 480px) {
+    html html {
+      font-size: 6px; } }
+  @media screen and (max-width: 320px) {
+    html html {
+      font-size: 5px; } }
 
-html{
-    font-size: 15px;
-}
+body {
+  background: #2f302f;
+  background: linear-gradient(160deg, #2f302f 4%, #202525 53%, #161717 82%, #153171 100%); }
 
-
-body{
-    background: rgb(47,48,47);
-    background: linear-gradient(160deg, rgba(47,48,47,1) 4%, rgba(32,37,37,1) 53%, rgba(22,23,23,1) 82%, rgba(21,49,113,1) 100%);
-}
-
-/************HEADER***************/
-
-header{
-    font-family: 'koulen';
-    font-size: 1.5rem;
-}
-
-.header__logo{
+header {
+  font-family: 'koulen';
+  font-size: 1.5rem; }
+  header nav .header__logo {
     width: 4rem;
     height: 4rem;
-    filter: invert(1);
-}
+    filter: invert(1); }
+  @media screen and (max-width: 320px) {
+    header nav {
+      justify-content: center; } }
+  header nav ul li {
+    border-radius: 10%; }
+    header nav ul li a:hover {
+      color: rgba(153, 153, 161, 0.664); }
+  header nav ul li:hover {
+    background-color: rgba(2, 2, 19, 0.288); }
 
-header ul li{
-    border-radius: 10%;
-}
+main {
+  display: flex;
+  flex-direction: column;
+  font-family: 'koulen';
+  display: block;
+  margin-top: 6rem; }
 
-header ul li:hover{
-    background-color: rgba(2, 2, 19, 0.288);
-}
-
-
-header nav ul li a:hover{
-    color: rgba(153, 153, 161, 0.664);
-}
-
-
-/****************MAIN********************/
-
-main{
-    display: flex;
-    flex-direction: column;
-    font-family: 'koulen';
-    display: block;
-    margin-top: 6rem;
-}
-
-
-/*******hero**********/
-
-.hero{
-    position: relative; /*para poder poner absolute los subtitulos*/
-}
-
-
-.heroTitulo{
+.hero {
+  position: relative; }
+  .heroTitulo {
     position: absolute;
     left: 10px;
     bottom: 5rem;
     color: white;
     font-size: 5rem;
-    font-weight: normal;
-}
-
-.heroSubtitulo{
+    font-weight: normal; }
+    @media screen and (max-width: 320px) {
+      .heroTitulo {
+        font-size: 3rem; } }
+  .heroSubtitulo {
     position: absolute;
     left: 10px;
     bottom: 2.5rem;
     color: white;
     font-size: 3rem;
-    font-weight: normal;
-}
+    font-weight: normal; }
+    @media screen and (max-width: 320px) {
+      .heroSubtitulo {
+        font-size: 1.5rem; } }
 
-
-/**********index section***********/
-
-
-.containerIndex{ 
-    display: flex;
-    justify-content: center;
+.containerIndex {
+  display: flex;
+  justify-content: center;
+  height: 40vw; }
+  .containerIndex .imgCarouselIndex {
     height: 40vw;
-}
+    border-radius: 5%; }
 
-.imgCarouselIndex{
-    height: 40vw;
-    border-radius: 5%;
-}
-
-
-
-/***********productos***********/
-
-
-.listaCaracteristicas{
+.listaCaracteristicas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  background-image: url(../assets/fondoproductos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .listaCaracteristicasParticulares {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 40rem;
-    background-image: url(../assets/fondoproductos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.listaCaracteristicas--particulares{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.imgProducto{
+    align-items: center; }
+  .listaCaracteristicas .imgProducto {
     height: 70%;
     width: 100%;
-    border-radius: 5%;
-}
+    border-radius: 5%; }
 
+.imgSolucion {
+  height: 70%;
+  width: 100%;
+  border-radius: 5%; }
 
-/***********soluciones section***********/
-
-.imgSolucion{
-    height: 70%;
-    width: 100%;
-    border-radius: 5%;
-}
-
-/***********Clientes section***********/
-
-
-.contenedorClientes{
-    height: 18rem;
-
-}
-.galeria__img{
+.contenedorClientes {
+  height: 18rem; }
+  .contenedorClientes .galeria__img {
     width: 99%;
     height: 99%;
-    object-fit: cover;
-}
-
-.galeria__img:hover{
+    object-fit: cover; }
+  .contenedorClientes .galeria__img:hover {
     object-fit: contain;
-    filter: drop-shadow(rgb(6, 3, 12) 5px 5px);
-}
+    filter: drop-shadow(#06030c 5px 5px); }
 
+.formulario .logoContacto {
+  width: 30vw; }
+  @media screen and (max-width: 575px) {
+    .formulario .logoContacto {
+      display: none; } }
+  @media screen and (max-width: 480px) {
+    .formulario .logoContacto {
+      display: none; } }
+  @media screen and (max-width: 320px) {
+    .formulario .logoContacto {
+      display: none; } }
 
-/***********Clases comunes main*************/
+.formulario select, .formulario input, .formulario textarea, .formulario button {
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  border: 1px solid black;
+  background: #717072;
+  font-family: 'koulen';
+  font-size: 1rem; }
+  @media screen and (max-width: 768px) {
+    .formulario select, .formulario input, .formulario textarea, .formulario button {
+      font-size: 2rem; } }
+  @media screen and (max-width: 575px) {
+    .formulario select, .formulario input, .formulario textarea, .formulario button {
+      font-size: 2rem; } }
+  @media screen and (max-width: 480px) {
+    .formulario select, .formulario input, .formulario textarea, .formulario button {
+      font-size: 2rem; } }
+  @media screen and (max-width: 320px) {
+    .formulario select, .formulario input, .formulario textarea, .formulario button {
+      font-size: 2rem; } }
 
-.titulo__grid{
-    font-size: 4rem;
-    color: black;
-    text-align: center;
-}
-
-
-/**********Formulario de contacto************/
-
-
-.logoContacto{
-    width: 30vw;
-}
-   
-
-.formulario select,
-.formulario input,
-.formulario textarea,
-.formulario button {
-    line-height: 1.5;
-    padding: 1rem .75rem;
-    border: 1px solid black;
-    background: rgb(113, 112, 114);
-    font-family: 'koulen';
-    font-size: 1rem;  
-}
+.formulario textarea {
+  resize: none;
+  height: 10rem; }
 
 .formulario ::placeholder {
-    color: inherit;
-    opacity: 1;
-}
-  
-   
-.formulario textarea {
-    resize: none;
-    height: 10rem;
-}
-   
+  color: inherit;
+  opacity: 1; }
 
-
-/**********FOOTER********/
-
-footer{
-    padding-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
-
-footer div a img{
+footer {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: white; }
+  footer .animacionFooter:hover {
+    animation: text-focus-in 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+  footer a img {
     padding: 0.2rem;
     height: 3rem;
-    filter: invert(1);
-}
-
-.animacionFooter:hover{
-    animation:  text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
+    filter: invert(1); }
 
 /*Animista*/
 @keyframes text-focus-in {
-    0% {
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      filter: blur(0px);
-      opacity: 1;
-    }
-  }
-  
-
-
-/******************MEDIA QUERIES************/
-
-/**768px**/
-@media screen and (max-width: 768px) {   
-    html{
-        font-size: 8px;
-    }
-
-
-    .formulario select,
-    .formulario input,
-    .formulario textarea,
-    .formulario button {
-    font-size: 2rem;
-    }  
-}
-
-
-
-/**575px**/
-@media screen and (max-width: 575px) {   
-    html{
-        font-size: 8px;
-    }
-
-
-    .logoContacto{
-        display: none;
-    }
-
-
-    .formulario select,
-    .formulario input,
-    .formulario textarea,
-    .formulario button {
-    font-size: 2rem;
-    }  
-}
-
-
-/**480px**/
-@media screen and (max-width: 480px) {   
-    html{
-        font-size: 6px;
-    }
-
-    .logoContacto{
-        display: none;
-    }
-}
-
-/**320px**/
-@media screen and (max-width: 320px) {   
-    html{
-        font-size: 5px;
-    }
-
-
-    header nav{
-        justify-content: center;
-    }
-
-    
-    .hero__titulo{
-        font-size: 3rem;
-
-    }
-    
-    .hero__subtitulo{
-        font-size: 1.5rem;
-    }
-    
- 
-    .logoContacto{
-        display: none;
-    }
-
-}
-
-
-
+  0% {
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    filter: blur(0px);
+    opacity: 1; } }

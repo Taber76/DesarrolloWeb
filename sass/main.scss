@@ -8,293 +8,36 @@
 
 html{
     font-size: 15px;
-}
-
-
-body{
-    background: rgb(47,48,47);
-    background: linear-gradient(160deg, rgba(47,48,47,1) 4%, rgba(32,37,37,1) 53%, rgba(22,23,23,1) 82%, rgba(21,49,113,1) 100%);
-}
-
-/************HEADER***************/
-
-header{
-    font-family: 'koulen';
-    font-size: 1.5rem;
-}
-
-.header__logo{
-    width: 4rem;
-    height: 4rem;
-    filter: invert(1);
-}
-
-header ul li{
-    border-radius: 10%;
-}
-
-header ul li:hover{
-    background-color: rgba(2, 2, 19, 0.288);
-}
-
-
-header nav ul li a:hover{
-    color: rgba(153, 153, 161, 0.664);
-}
-
-
-/****************MAIN********************/
-
-main{
-    display: flex;
-    flex-direction: column;
-    font-family: 'koulen';
-    display: block;
-    margin-top: 6rem;
-}
-
-
-/*******hero**********/
-
-.hero{
-    position: relative; /*para poder poner absolute los subtitulos*/
-}
-
-
-.hero__titulo{
-    position: absolute;
-    left: 10px;
-    bottom: 5rem;
-    color: white;
-    font-size: 5rem;
-    font-weight: normal;
-}
-
-.hero__subtitulo{
-    position: absolute;
-    left: 10px;
-    bottom: 2.5rem;
-    color: white;
-    font-size: 3rem;
-    font-weight: normal;
-}
-
-
-/**********index section***********/
-
-
-.container__index{ 
-    display: flex;
-    justify-content: center;
-    height: 40vw;
-}
-
-.imgCarouselIndex{
-    height: 40vw;
-    border-radius: 5%;
-}
-
-
-
-/***********productos***********/
-
-
-.listaCaracteristicas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40rem;
-    background-image: url(../assets/fondoproductos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.listaCaracteristicas--particulares{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.imgProducto{
-    height: 70%;
-    width: 100%;
-    border-radius: 5%;
-}
-
-
-/***********soluciones section***********/
-
-
-
-/***********Clientes section***********/
-
-
-.contenedorClientes{
-    height: 18rem;
-
-}
-.galeria__img{
-    width: 99%;
-    height: 99%;
-    object-fit: cover;
-}
-
-.galeria__img:hover{
-    object-fit: contain;
-    filter: drop-shadow(rgb(6, 3, 12) 5px 5px);
-}
-
-
-/***********Clases comunes main*************/
-
-.titulo__grid{
-    font-size: 4rem;
-    color: black;
-    text-align: center;
-}
-
-
-/**********Formulario de contacto************/
-
-
-.logoContacto{
-    width: 30vw;
-}
-   
-
-.formulario select,
-.formulario input,
-.formulario textarea,
-.formulario button {
-    line-height: 1.5;
-    padding: 1rem .75rem;
-    border: 1px solid black;
-    background: rgb(113, 112, 114);
-    font-family: 'koulen';
-    font-size: 1rem;  
-}
-
-.formulario ::placeholder {
-    color: inherit;
-    opacity: 1;
-}
-  
-   
-.formulario textarea {
-    resize: none;
-    height: 10rem;
-}
-   
-
-
-/**********FOOTER********/
-
-footer{
-    padding-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
-
-footer div a img{
-    padding: 0.2rem;
-    height: 3rem;
-    filter: invert(1);
-}
-
-.animacionFooter:hover{
-    animation:  text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-
-/*Animista*/
-@keyframes text-focus-in {
-    0% {
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      filter: blur(0px);
-      opacity: 1;
-    }
-  }
-  
-
-
-/******************MEDIA QUERIES************/
-
-/**768px**/
-@media screen and (max-width: 768px) {   
-    html{
-        font-size: 8px;
-    }
-
-
-    .formulario select,
-    .formulario input,
-    .formulario textarea,
-    .formulario button {
-    font-size: 2rem;
-    }  
-}
-
-
-
-/**575px**/
-@media screen and (max-width: 575px) {   
-    html{
-        font-size: 8px;
-    }
-
-
-    .logoContacto{
-        display: none;
-    }
-
-
-    .formulario select,
-    .formulario input,
-    .formulario textarea,
-    .formulario button {
-    font-size: 2rem;
-    }  
-}
-
-
-/**480px**/
-@media screen and (max-width: 480px) {   
-    html{
-        font-size: 6px;
-    }
-
-    .logoContacto{
-        display: none;
-    }
-}
-
-/**320px**/
-@media screen and (max-width: 320px) {   
-    html{
-        font-size: 5px;
-    }
-
-
-    header nav{
-        justify-content: center;
+    @media screen and (max-width: 768px) {   
+        html{
+            font-size: 8px;
+            }
+        }
+    @media screen and (max-width: 575px) {   
+        html{
+            font-size: 8px;
+            }
+        }
+    @media screen and (max-width: 480px) {   
+         html{
+            font-size: 6px;
+            }
+        }
+    @media screen and (max-width: 320px) {   
+        html{
+            font-size: 5px;
+            }
+        }
     }
 
     
-    .hero__titulo{
-        font-size: 3rem;
-
-    }
-    
-    .hero__subtitulo{
-        font-size: 1.5rem;
-    }
-    
- 
-    .logoContacto{
-        display: none;
-    }
-
-}
+@import "./partial/body";
+@import "./partial/header";
+@import "./partial/main";
+@import "./partial/hero";
+@import "./partial/index";
+@import "./partial/productos";
+@import "./partial/soluciones";
+@import "./partial/clientes";
+@import "./partial/contacto";
+@import "./partial/footer";
