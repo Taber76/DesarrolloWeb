@@ -1,13 +1,13 @@
 .formulario{
     .logoContacto{
         width: 30vw;
-        @media screen and (max-width: 575px) {
+        @include tableth {
             display: none;
         }
-        @media screen and (max-width: 480px) {
+        @include tabletv {
             display: none;
         }
-        @media screen and (max-width: 320px) {
+        @include movil {
             display: none;
         }
     }
@@ -18,16 +18,7 @@
         background: rgb(113, 112, 114);
         font-family: 'koulen';
         font-size: 1rem;
-        @media screen and (max-width: 768px) {
-            font-size: 2rem;
-        }
-        @media screen and (max-width: 575px) { 
-            font-size: 2rem;
-        }
-        @media screen and (max-width: 480px) { 
-            font-size: 2rem;
-        }
-        @media screen and (max-width: 320px) { 
+        @include desktop {
             font-size: 2rem;
         }
     }

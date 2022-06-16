@@ -1,36 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-size: 15px;
-    @media screen and (max-width: 768px) {   
-        html{
-            font-size: 8px;
-            }
-        }
-    @media screen and (max-width: 575px) {   
-        html{
-            font-size: 8px;
-            }
-        }
-    @media screen and (max-width: 480px) {   
-         html{
-            font-size: 6px;
-            }
-        }
-    @media screen and (max-width: 320px) {   
-        html{
-            font-size: 5px;
-            }
-        }
-    }
-
-    
+@import "./partial/responsive";
+@import "./partial/html";
 @import "./partial/body";
 @import "./partial/header";
 @import "./partial/main";
@@ -41,3 +10,5 @@ html{
 @import "./partial/clientes";
 @import "./partial/contacto";
 @import "./partial/footer";
+
+

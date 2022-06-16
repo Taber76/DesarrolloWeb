@@ -7,9 +7,9 @@ header{
             height: 4rem;
             filter: invert(1);
         }
-        @media screen and (max-width: 320px) {
+        @include movil {
             justify-content: center;
-        } 
+        }
         ul{
             li{
                 border-radius: 10%;

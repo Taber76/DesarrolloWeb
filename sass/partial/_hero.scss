@@ -7,7 +7,7 @@
         color: white;
         font-size: 5rem;
         font-weight: normal;
-        @media screen and (max-width: 320px) {
+        @include movil {
             font-size: 3rem;
         }
     }
@@ -18,7 +18,7 @@
         color: white;
         font-size: 3rem;
         font-weight: normal;
-        @media screen and (max-width: 320px) {
+        @include movil {
             font-size: 1.5rem;
         }
     }

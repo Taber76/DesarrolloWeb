@@ -7,17 +7,17 @@
 html {
   font-size: 15px; }
   @media screen and (max-width: 768px) {
-    html html {
-      font-size: 8px; } }
+    html {
+      font-size: textdesktop; } }
   @media screen and (max-width: 575px) {
-    html html {
-      font-size: 8px; } }
+    html {
+      font-size: texttableth; } }
   @media screen and (max-width: 480px) {
-    html html {
-      font-size: 6px; } }
+    html {
+      font-size: texttabletv; } }
   @media screen and (max-width: 320px) {
-    html html {
-      font-size: 5px; } }
+    html {
+      font-size: textmovil; } }
 
 body {
   background: #2f302f;
@@ -130,15 +130,6 @@ main {
   font-family: 'koulen';
   font-size: 1rem; }
   @media screen and (max-width: 768px) {
-    .formulario select, .formulario input, .formulario textarea, .formulario button {
-      font-size: 2rem; } }
-  @media screen and (max-width: 575px) {
-    .formulario select, .formulario input, .formulario textarea, .formulario button {
-      font-size: 2rem; } }
-  @media screen and (max-width: 480px) {
-    .formulario select, .formulario input, .formulario textarea, .formulario button {
-      font-size: 2rem; } }
-  @media screen and (max-width: 320px) {
     .formulario select, .formulario input, .formulario textarea, .formulario button {
       font-size: 2rem; } }
 

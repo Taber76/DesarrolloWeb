@@ -27,8 +27,14 @@
                   <li class="nav-item">
                     <a class="nav-link" href="productos.html">Productos</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="soluciones.html">Soluciones</a>
+                  <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-tooggle active" aria-current="page" href="soluciones.html" id="dropdownSoluciones" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Soluciones</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownSoluciones">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="clientes.html">Clientes</a>
@@ -46,58 +52,151 @@
 
     <main>
 
+        <!--SECTION AGRICULTURA-->
         <div class="container-fluid">
+
+            <div class="row">
+                <h2 class="text-start badge bg-dark text-wrap fw-lighter fs-3">
+                    Agricultura de presicion
+                </h2>
+            </div>
             <div class="row align-items-center justify-content-center">
+
+                <!--IMAGEN-->
                 <div class="col-md-6">
-                    <img class="imgSolucion" src="../assets/soluciones_agricultura.png" alt="vistas UAV murcielago">               
+                    <img class="imgSolucion" src="../assets/soluciones_agricultura.png" alt="vistas capas campo">               
                 </div>
+
+                <!--TEXTO LATERAL-->
                 <div class="col-md-6">
-                    <ul class="list-group badge fs-6">
-                        <li class="list-group-item fs-4 bg-primary text-wrap">SECTOR AGRICULTURA (CAMARA NIR)</li>
-                        <li class="list-group-item">- Deteccion de deficit hidrico</li>
-                        <li class="list-group-item">- Control de plagas</li>
-                        <li class="list-group-item">- Seguimiento de cosechas</li>
-                    </ul>
+
+                    <p class="text-start badge bg-dark text-wrap fw-lighter fs-4">
+                        Nuestros UAV son un gran activo para los agricultores porque les permite comprender mejor la salud y la vitalidad de sus cultivos. Al usar nuestra plataforma junto con una camara multiespectral o termica, hemos sido testigos de como nuestros clientes experimentan rendimientos mejorados y costos operativos reducidos.
+                    </p>
+                    <p class="text-start badge bg-dark text-wrap fw-normal fs-4">
+                        Las camaras multiespectrales y termicas son herramientas muy eficaces para evaluar la productividad del suelo y analizar la salud de las plantas. Ver la salud del suelo y los cultivos a simple vista es muy limitado. Por otro lado, la tecnologia de sensores multiespectrales permite al agricultor ver mas alla de lo que puede ver el ojo desnudo. Los datos de imagenes multiespectrales se pueden utilizar para:
+                    </p>                                
                 </div>
+
+            </div>
+
+            <!--TEXTO CENTRAL-->
+            <div class="row" style="padding: 10px;">
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Identificar la ubicacion especifica de plagas y malezas para optimizar el uso de pesticidas y fumigaciones de cultivos a traves de la deteccion temprana.</p>
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Proporcionar datos sobre la fertilidad del suelo y refinar la fertilizacion mediante la deteccion de deficiencias de nutrientes.</p>
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Cuente las plantas y determine los problemas de poblacion y espaciamiento, asi como el rendimiento estimado del cultivo.</p>
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Medir y controlar el riego de cultivos identificando areas donde se sospecha estres hidrico.</p>
             </div>
         </div>
           
         <hr>
 
+        <!--SECTION INFRAESTRUCTURAS-->
         <div class="container-fluid">
+
+            <div class="row">
+                <h2 class="text-end badge bg-dark text-wrap fw-lighter fs-3">
+                    Infraestructuras, servicios publicos, inspeccion de carreteras y vias ferreas
+                </h2>
+            </div>
             <div class="row align-items-center justify-content-center">
+              
+                <!--TEXTO LATERAL-->
                 <div class="col-md-6">
-                    <ul class="list-group badge fs-6">
-                        <li class="list-group-item fs-4 bg-primary text-wrap">SECTOR ENERGIA (CAMARA TERMICA)</li>
-                        <li class="list-group-item">- Falla paneles solares</li>
-                        <li class="list-group-item">- Lineas electricas degradadas</li>
-                        <li class="list-group-item">- Aislaciones termicas rotas</li>
-                    </ul>               
+
+                    <p class="text-start badge bg-dark text-wrap fw-lighter fs-4">
+                        Nuestros UAV pueden inspeccionar hasta 200 km en un solo vuelo, y monitorear sitios remotos a una distancia de hasta 50 km (o ilimitado a traves de LTE/4G), utilizando video termico y RGB de alta resolucion. Lo hace de forma totalmente autonoma y puede volar corredores predefinidos con seguimiento automatico del terreno para realizar las siguientes tareas:
+                    </p>                            
                 </div>
+
+                <!--IMAGEN-->
                 <div class="col-md-6">
-                    <img class="imgSolucion" src="../assets/panel fotovoltaico.jpg" alt="vistas UAV murcielago">
+                    <img class="imgSolucion" src="../assets/linas electricas.jpg" alt="torre alta tension">               
                 </div>
+
+            </div>
+
+            <!--TEXTO CENTRAL-->
+            <div class="row" style="padding: 10px;">
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Controlar / Identificar daños en la via ferrea o carreteras.</p>
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Controlar / Monitorear la invasion de vegetacion.</p>
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Controlar / Evaluar los daños de los desastres naturales.</p>
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Controlar / Inspeccionar lineas electricas y aislaciones.</p>
+            </div>
+            
+        </div>
+
+        <hr>
+
+        <!--SECTION APOYO EMERGENCIAS-->
+        <div class="container-fluid">
+
+            <div class="row">
+                <h2 class="text-start badge bg-dark text-wrap fw-lighter fs-3">
+                    Apoyo situaciones de emergencia
+                </h2>
+            </div>
+            <div class="row align-items-center justify-content-center">
+
+                <!--IMAGEN-->
+                <div class="col-md-6">
+                    <img class="imgSolucion" src="../assets/inundacion.jpg" alt="inundacion">               
+                </div>
+
+                <!--TEXTO LATERAL-->
+                <div class="col-md-6">
+                    <p class="text-start badge bg-dark text-wrap fw-lighter fs-4">
+                        Antes, despues y durante un desastre, el tiempo y la seguridad son esenciales. Es por esto que los equipos de respuesta que despliegan vehiculos aereos no tripulados tienen una ventaja decisiva sobre los que no lo hacen. La capacidad de obtener una vision general completa de la escena sin poner en peligro a los socorristas es fundamental porque no solo ahorra tiempo, sino que tambien puede salvar vidas. Nuestros UAV tienen la capacidad de:
+                    </p>                               
+                </div>
+
+            </div>
+
+            <!--TEXTO CENTRAL-->
+            <div class="row" style="padding: 10px;">
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Realizar busqueda de personas desaparecidas.</p>
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Proporcionar video HD en vivo de areas dificiles de alcanzar.</p>
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Controlar / realizar inteligencia para emergencias y desastres naturales.</p>
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Controlar / Reconocimiento en vivo de roturas o derrames.</p>
             </div>
         </div>
 
         <hr>
 
+        <!--SECTION VIGILANCIA-->
         <div class="container-fluid">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-6">
-                    <img class="imgSolucion" src="../assets/Camara-térmica-seguridad-768x242.jpg" alt="vistas UAV murcielago">               
-                </div>
-                <div class="col-md-6">
-                    <ul class="list-group badge fs-6">
-                        <li class="list-group-item fs-4 bg-primary text-wrap">SECTOR SEGURIDAD (CAMARA TERMICA)</li>
-                        <li class="list-group-item">- Vigilancia perimetral</li>
-                        <li class="list-group-item">- Deteccion incendios incipientes</li>
-                        <li class="list-group-item">- Busqueda y seguimiento</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
+            <div class="row">
+                <h2 class="text-end badge bg-dark text-wrap fw-lighter fs-3">
+                    Vigilancia de largo alcance
+                </h2>
+            </div>
+            <div class="row align-items-center justify-content-center">
+              
+                <!--TEXTO LATERAL-->
+                <div class="col-md-6">
+
+                    <p class="text-start badge bg-dark text-wrap fw-lighter fs-4">
+                        Nuestros UAV estan diseñados para organizaciones que necesitan un ojo en el cielo. Proporcionando video termico y HD RGB en vivo para reconocimiento aereo. Con un rango de video de hasta 50 KM o un rango ilimitado usando la red movil. Brindando apoyo para:
+                    </p>                            
+                </div>
+
+                <!--IMAGEN-->
+                <div class="col-md-6">
+                    <img class="imgSolucion" src="../assets/Camara-térmica-seguridad-768x242.jpg" alt="Vigilancia termica">               
+                </div>
+
+            </div>
+
+            <!--TEXTO CENTRAL-->
+            <div class="row" style="padding: 10px;">
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Detectar y observar incendios forestales.</p>
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Mejorar la seguridad de los guardabosques con reconocimiento aereo en areas peligrosas.</p>
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Vigilancia y monitoreo perimetral.</p>
+                <p class="text-center badge bg-dark text-wrap fw-normal fs-5">- Vigilancia del transito.</p>
+            </div>
+            
+        </div>
 
     </main>
  
