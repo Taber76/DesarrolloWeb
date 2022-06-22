@@ -5,16 +5,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SkyVision</title>
+        <title>SkyVision | Contacto</title>
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="shortcut icon" href="./assets/favicon.ico">
+        <link rel="shortcut icon" href="../assets/favicon.ico">
     </head>
 
 <body>
 
     
     <header> 
-        <nav class="navbar fixed-top navbar-expand-lg bg-secondary">
+        <nav class="navbar fixed-top navbar-expand-lg bg-primary">
             <div class="container-fluid">
               <a class="navbar-brand animacionFooter" href="../index.html"><img src="../assets/Logo.png" alt="Logo" class="header__logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,6 +54,8 @@
                 </div>
                 <form class="col-sm-8" action="" method="get" enctype="text/plain" >
                     <div class="container-fluid">
+
+                        <!--OPCIONES DE CONTACTO-->
                         <div class="row">
                             <select class="col-12">
                                 <option selected disabled>-- Elija una opcion --</option>
@@ -61,7 +63,9 @@
                                 <option>Pedir cotizacion</option>
                                 <option>Otros</option>   
                             </select>
-                        </div>  
+                        </div>
+                        
+                        <!--DATOS PERSONALES-->
                         <div class="row justify-content-between">
                             <input class="col-sm-5" type="text" id="nombre" placeholder="Nombre *" required>  
                             <input class="col-sm-5" type="text" id="apellido" placeholder="Apellido *" required>
@@ -69,11 +73,15 @@
                         <div class="row justify-content-between">
                             <input class="col-sm-5" type="email" id="email" placeholder="Email *" required>  
                             <input class="col-sm-5" type="tel" id="tel" placeholder="Telefono">
-                        </div>     
+                        </div>
+                        
+                        <!--MENSAJE-->
                         <div class="row">
                             <textarea class="col-12" id="consulta" placeholder="Mensaje *" required></textarea>
                         </div>
                         <div class="row" style="color: black;">CAMPOS REQUERIDOS *</div>
+                        
+                        <!--BOTONES-->
                         <div class="row">
                             <button class="col-3" type="submit">
                                 <span class="">ENVIAR</span>
@@ -81,7 +89,8 @@
                             <button class="col-3" type="reset">
                                 <span class="">BORRAR</span>
                             </button> 
-                        </div>          
+                        </div>
+
                     </div>
                 </form>
             </div>    

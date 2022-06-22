@@ -4,22 +4,17 @@
         @include tableth {
             display: none;
         }
-        @include tabletv {
-            display: none;
-        }
-        @include movil {
-            display: none;
-        }
+
     }
     select{
         line-height: 1.5;
         padding: 1rem .75rem;
         border: 1px solid black;
         background: rgb(113, 112, 114);
-        font-family: 'koulen';
+        font-family: map-get($tema, fuentetitulos);
         font-size: 1rem;
         @include desktop {
-            font-size: 2rem;
+            font-size: 1rem;
         }
     }
     input{

@@ -1,7 +1,4 @@
 main{
-    display: flex;
-    flex-direction: column;
-    font-family: 'koulen';
-    display: block;
+    font-family: map-get($tema, fuentetitulos);
     margin-top: 6rem;
 }

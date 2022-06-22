@@ -20,55 +20,61 @@ html {
       font-size: textmovil; } }
 
 body {
-  background: #2f302f;
-  background: linear-gradient(160deg, #2f302f 4%, #202525 53%, #161717 82%, #153171 100%); }
+  background: #212529; }
 
 header {
-  font-family: 'koulen';
+  font-family: "koulen";
   font-size: 1.5rem; }
   header nav .header__logo {
     width: 4rem;
     height: 4rem;
     filter: invert(1); }
+  header nav .navcolor {
+    background-color: #0D6EFD; }
   @media screen and (max-width: 320px) {
     header nav {
       justify-content: center; } }
-  header nav ul li {
-    border-radius: 10%; }
-    header nav ul li a:hover {
-      color: rgba(153, 153, 161, 0.664); }
-  header nav ul li:hover {
-    background-color: rgba(2, 2, 19, 0.288); }
+  header nav ul {
+    /** li:hover{
+                background-color: rgba(2, 2, 19, 0.288);
+            }**/ }
+    header nav ul li {
+      border-radius: 10%; }
+      header nav ul li a:hover {
+        color: rgba(153, 153, 161, 0.664); }
 
 main {
-  display: flex;
-  flex-direction: column;
-  font-family: 'koulen';
-  display: block;
+  font-family: "koulen";
   margin-top: 6rem; }
 
 .hero {
   position: relative; }
-  .heroTitulo {
+  .hero__titulo {
     position: absolute;
     left: 10px;
     bottom: 5rem;
     color: white;
     font-size: 5rem;
     font-weight: normal; }
-    @media screen and (max-width: 320px) {
-      .heroTitulo {
-        font-size: 3rem; } }
-  .heroSubtitulo {
+    @media screen and (max-width: 768px) {
+      .hero__titulo {
+        font-size: 4rem; } }
+    @media screen and (max-width: 575px) {
+      .hero__titulo {
+        font-size: 2.5rem; } }
+  .hero__subtitulo {
     position: absolute;
     left: 10px;
     bottom: 2.5rem;
     color: white;
     font-size: 3rem;
     font-weight: normal; }
-    @media screen and (max-width: 320px) {
-      .heroSubtitulo {
-        font-size: 1.5rem; } }
+    @media screen and (max-width: 768px) {
+      .hero__subtitulo {
+        font-size: 2rem; } }
+    @media screen and (max-width: 575px) {
+      .hero__subtitulo {
+        font-size: 1rem; } }
 
 .containerIndex {
   display: flex;
@@ -102,11 +108,11 @@ main {
 
 .contenedorClientes {
   height: 18rem; }
-  .contenedorClientes .galeria__img {
+  .contenedorClientes__galeriaImg {
     width: 99%;
     height: 99%;
     object-fit: cover; }
-  .contenedorClientes .galeria__img:hover {
+  .contenedorClientes__galeriaImg:hover {
     object-fit: contain;
     filter: drop-shadow(#06030c 5px 5px); }
 
@@ -115,23 +121,17 @@ main {
   @media screen and (max-width: 575px) {
     .formulario .logoContacto {
       display: none; } }
-  @media screen and (max-width: 480px) {
-    .formulario .logoContacto {
-      display: none; } }
-  @media screen and (max-width: 320px) {
-    .formulario .logoContacto {
-      display: none; } }
 
 .formulario select, .formulario input, .formulario textarea, .formulario button {
   line-height: 1.5;
   padding: 1rem .75rem;
   border: 1px solid black;
   background: #717072;
-  font-family: 'koulen';
+  font-family: "koulen";
   font-size: 1rem; }
   @media screen and (max-width: 768px) {
     .formulario select, .formulario input, .formulario textarea, .formulario button {
-      font-size: 2rem; } }
+      font-size: 1rem; } }
 
 .formulario textarea {
   resize: none;
@@ -145,13 +145,17 @@ footer {
   padding-top: 1rem;
   display: flex;
   justify-content: space-between;
-  color: white; }
+  color: white;
+  font: "koulen"; }
   footer .animacionFooter:hover {
     animation: text-focus-in 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
   footer a img {
     padding: 0.2rem;
     height: 3rem;
     filter: invert(1); }
+    @media screen and (max-width: 575px) {
+      footer a img {
+        height: 2rem; } }
 
 /*Animista*/
 @keyframes text-focus-in {

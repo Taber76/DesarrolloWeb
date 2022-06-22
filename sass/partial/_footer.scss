@@ -3,6 +3,7 @@ footer{
     display: flex;
     justify-content: space-between;
     color: white;
+    font: map-get($tema, fuentetitulos);
     .animacionFooter:hover{
       animation:  text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;    
     }
@@ -10,7 +11,10 @@ footer{
       img{
           padding: 0.2rem;
           height: 3rem;
-          filter: invert(1);    
+          filter: invert(1);
+          @include tableth {
+            height: 2rem;
+        }
       }
     }
 }

@@ -1,5 +1,5 @@
 header{
-    font-family: 'koulen';
+    font-family: map-get($tema, fuentetitulos);
     font-size: 1.5rem;
     nav{
         .header__logo{
@@ -7,6 +7,10 @@ header{
             height: 4rem;
             filter: invert(1);
         }
+        .navcolor{
+            background-color: map-get($tema, colornav);
+        }    
+         
         @include movil {
             justify-content: center;
         }
@@ -17,9 +21,9 @@ header{
                     color: rgba(153, 153, 161, 0.664);
                 } 
             }
-            li:hover{
+           /** li:hover{
                 background-color: rgba(2, 2, 19, 0.288);
-            }
+            }**/
         }
     }
 }

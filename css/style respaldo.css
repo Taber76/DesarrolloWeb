@@ -19,7 +19,7 @@ body{
 /************HEADER***************/
 
 header{
-    font-family: 'koulen';
+    font-family: map-get($tema, fuentetitulos);
     font-size: 1.5rem;
 }
 
@@ -48,7 +48,7 @@ header nav ul li a:hover{
 main{
     display: flex;
     flex-direction: column;
-    font-family: 'koulen';
+    font-family: map-get($tema, fuentetitulos);
     display: block;
     margin-top: 6rem;
 }
@@ -171,7 +171,7 @@ main{
     padding: 1rem .75rem;
     border: 1px solid black;
     background: rgb(113, 112, 114);
-    font-family: 'koulen';
+    font-family: map-get($tema, fuentetitulos);
     font-size: 1rem;  
 }
 
