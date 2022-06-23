@@ -1,9 +1,31 @@
 .containerIndex{ 
     display: flex;
     justify-content: center;
-    height: 40vw;
     .imgCarouselIndex{
-        height: 40vw;
         border-radius: 5%;
-    } 
+    }
+    &__titulo{
+        font-size: 3rem;
+        @include desktop {
+            font-size: 2rem;
+        }
+        @include tableth {
+            font-size: 1.5rem;
+        }
+        @include tabletv {
+            display: none;
+        }
+    }
+    &__subtitulo{
+        font-size: 2rem;
+        @include desktop {
+            font-size: 1.5rem;
+        }
+        @include tableth {
+            font-size: .75rem;
+        }
+        @include movil {
+            font-size: .5rem;
+        }
+    }
 }

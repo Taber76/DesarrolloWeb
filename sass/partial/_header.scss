@@ -2,28 +2,21 @@ header{
     font-family: map-get($tema, fuentetitulos);
     font-size: 1.5rem;
     nav{
+        background: linear-gradient(0deg, rgba(33,37,41,1) 0%, rgba(13,110,253,1) 100%);
         .header__logo{
             width: 4rem;
             height: 4rem;
             filter: invert(1);
         }
-        .navcolor{
-            background-color: map-get($tema, colornav);
-        }    
+                   
          
         @include movil {
             justify-content: center;
         }
-        ul{
-            li{
-                border-radius: 10%;
-                a:hover{
-                    color: rgba(153, 153, 161, 0.664);
-                } 
-            }
-           /** li:hover{
-                background-color: rgba(2, 2, 19, 0.288);
-            }**/
-        }
-    }
+        .dropdown:hover .dropdown-menu {
+                    display: block;
+                    margin-top: 0; 
+        }   
+    }                  
+ 
 }
