@@ -1,5 +1,11 @@
+//PAGINA SOLUCIONES
+
 .imgSolucion{
     height: 70%;
     width: 100%;
     border-radius: 5%;
+}
+
+.textodescriptivo{
+    font-family: map-get($tema, fuentetexto);
 }

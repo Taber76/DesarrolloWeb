@@ -1,12 +1,14 @@
-$textdesktop: 8px;
-$texttableth: 8px;
-$texttabletv: 6px;
-$textmovil: 5px;
+// tamano fuente responsive
+$textdesktop: 18px;
+$texttableth: 17px;
+$texttabletv: 16px;
+$textmovil: 15px;
 
+// fuentes y colores sitio
 $tema:(
-    fuentetitulos: 'koulen', 
+    fuentetitulos: 'koulen',
+    fuentetexto: 'Open Sans',
     colorfondo: #212529,
     colornav: #0D6EFD,
     colortitulo: radial-gradient(circle, rgba(13,110,253,1) 0%, rgba(25,65,122,1) 30%, rgba(33,37,41,1) 69%, rgba(33,37,41,1) 100%),
 )
-

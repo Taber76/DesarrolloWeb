@@ -1,10 +1,12 @@
+//FOOTER
+
 footer{
     padding-top: 1rem;
     display: flex;
     justify-content: space-between;
     color: white;
     background: linear-gradient(180deg, rgba(33,37,41,1) 0%, rgba(13,110,253,1) 100%);
-    font: map-get($tema, fuentetitulos);
+    font-family: map-get($tema, fuentetexto);
     .animacionFooter:hover{
       animation:  text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;    
     }
@@ -25,7 +27,7 @@ footer{
   }
 
 
-/*Animista*/
+//ANIMACION FOOTER -- Animista
 @keyframes text-focus-in {
     0% {
       filter: blur(12px);
