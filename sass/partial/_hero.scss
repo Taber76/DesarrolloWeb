@@ -3,8 +3,8 @@
     &__titulo{
         position: absolute;
         left: 10px;
-        bottom: 5rem;
-        color: white;
+        top: .5rem;
+        color: map-get($tema, colorfondo);
         font-size: 5rem;
         font-weight: normal;
         @include desktop{
@@ -17,8 +17,8 @@
     &__subtitulo{
         position: absolute;
         left: 10px;
-        bottom: 2.5rem;
-        color: white;
+        bottom: 2rem;
+        color: map-get($tema, colorfondo);
         font-size: 3rem;
         font-weight: normal;
         @include desktop{

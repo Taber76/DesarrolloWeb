@@ -4,8 +4,8 @@ header{
     nav{
         background: linear-gradient(0deg, rgba(33,37,41,1) 0%, rgba(13,110,253,1) 100%);
         .header__logo{
-            width: 4rem;
-            height: 4rem;
+            width: $tamanonav;
+            height: $tamanonav;
             filter: invert(1);
         }
                    

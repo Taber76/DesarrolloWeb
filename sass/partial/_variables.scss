@@ -10,5 +10,10 @@ $tema:(
     fuentetexto: 'Open Sans',
     colorfondo: #212529,
     colornav: #0D6EFD,
+    colorsubtitulo: #1b1a27,
     colortitulo: radial-gradient(circle, rgba(13,110,253,1) 0%, rgba(25,65,122,1) 30%, rgba(33,37,41,1) 69%, rgba(33,37,41,1) 100%),
-)
+);
+
+// tamano nav
+$tamanonav: 3rem;
+$margennav: $tamanonav + 1.7; //tamanonav + 2rem

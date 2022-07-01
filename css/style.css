@@ -30,8 +30,8 @@ header {
   header nav {
     background: linear-gradient(0deg, #212529 0%, #0d6efd 100%); }
     header nav .header__logo {
-      width: 4rem;
-      height: 4rem;
+      width: 3rem;
+      height: 3rem;
       filter: invert(1); }
     @media screen and (max-width: 320px) {
       header nav {
@@ -42,20 +42,26 @@ header {
 
 main {
   font-family: "koulen";
-  margin-top: 6rem; }
+  margin-top: 4.7rem; }
   main .titulo__pagina {
     color: #212529;
     background: radial-gradient(circle, #0d6efd 0%, #19417a 30%, #212529 69%, #212529 100%);
     opacity: 0.7;
     text-align: center; }
+  main .subtitulo__pagina {
+    color: #1b1a27;
+    background: radial-gradient(circle, #0d6efd 0%, #19417a 30%, #212529 69%, #212529 100%);
+    opacity: 0.7;
+    text-align: center;
+    margin-top: 3rem; }
 
 .hero {
   position: relative; }
   .hero__titulo {
     position: absolute;
     left: 10px;
-    bottom: 5rem;
-    color: white;
+    top: .5rem;
+    color: #212529;
     font-size: 5rem;
     font-weight: normal; }
     @media screen and (max-width: 768px) {
@@ -67,8 +73,8 @@ main {
   .hero__subtitulo {
     position: absolute;
     left: 10px;
-    bottom: 2.5rem;
-    color: white;
+    bottom: 2rem;
+    color: #212529;
     font-size: 3rem;
     font-weight: normal; }
     @media screen and (max-width: 768px) {
@@ -79,7 +85,6 @@ main {
         font-size: 1rem; } }
 
 .containerIndex {
-  display: flex;
   justify-content: center; }
   .containerIndex .imgCarouselIndex {
     border-radius: 5%; }
@@ -104,6 +109,10 @@ main {
       .containerIndex__subtitulo {
         font-size: .8rem; } }
 
+.indexSolucion__img:hover {
+  transform: scale(0.99, 0.99);
+  opacity: .8; }
+
 .listaCaracteristicas {
   display: flex;
   justify-content: center;
@@ -127,7 +136,8 @@ main {
   border-radius: 5%; }
 
 .textodescriptivo {
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+  text-align: justify; }
 
 .contenedorClientes {
   height: 18rem; }
