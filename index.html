@@ -19,6 +19,7 @@
         <nav class="navbar fixed-top navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand animacionFooter" href="./index.html"><img src="./assets/Logo.png" alt="Logo" class="header__logo"></a>
+              <a class="navbar-brand animacionFooter" href="./index.html">SkyVision</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -27,11 +28,11 @@
                 <!--LISTA DE OPCIONES-->
                 <ul class="navbar-nav align-items-center">
                   <li class="nav-item">
-                    <a class="nav-link" href="./vistas/productos.html">Productos</a>
+                    <a class="nav-link" href="./vistas/productos.html">PRODUCTOS</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-tooggle" aria-current="page" href="./vistas/soluciones.html" id="dropdownSoluciones" role="button"
-                    aria-haspopup="true" aria-expanded="false" style="text-align: center;">Soluciones</a>
+                    aria-haspopup="true" aria-expanded="false" style="text-align: center;">SOLUCIONES</a>
                     <ul class="dropdown-menu bg-secondary" aria-labelledby="dropdownSoluciones">
                         <li><a class="dropdown-item" href="./vistas/soluciones.html#agricultura">Agricultura</a></li>
                         <li><a class="dropdown-item" href="./vistas/soluciones.html#infraestructuras">Infraestructuras</a></li>
@@ -40,10 +41,10 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./vistas/clientes.html">Clientes</a>
+                    <a class="nav-link" href="./vistas/clientes.html">CLIENTES</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./vistas/contacto.html">Contacto</a>
+                    <a class="nav-link" href="./vistas/contacto.html">CONTACTO</a>
                   </li>
                 </ul>
 
@@ -59,7 +60,7 @@
     <!--HERO SECTION-->    
         <section class="hero">
             <div class="videoContainer">
-                <video style="width:100%;" src="./assets/videoHead.mp4" autoplay loop></video>        
+                <video style="width:100%;" src="./assets/videoHead.mp4" autoplay loop muted playsinline></video>        
             </div>
 
             <h1 class="hero__titulo">INTELIGENCIA  AEREA</h1>
@@ -68,6 +69,9 @@
 
 
       <!--MAIN SECTION-->
+      <hr>
+      <h2 class="subtitulo__seccion">EXPLORE LOS USOS DE NUESTROS UAV</h2>
+      <h4 class="subtitulo__seccion">EQUIPOS TOTALMENTE AUTONOMOS DE CALIDAD COMERCIAL</h4>
 
       <!--CAROUSEL-->
         <div class="container-lg containerIndex">
@@ -121,16 +125,17 @@
         </div>
       
       <!--SECTION CONFIGURACIONES-->
-        <h2 class="subtitulo__pagina">COnfiguraciones estandar</h1>
+        <hr>
+        <h2 class="subtitulo__seccion">CONFIGURACIONES ESTANDAR</h1>
         <section class="container" style="margin-top: 1rem;">
           
-          <div class="row">
+          <div class="row fs-9">
             
             <div class="col-md-4" style="padding: 10px;">
-              <div class="card bg-secondary" style="width: 100%;">
+              <div class="card border-light" style="width: 100%;">
                 <img src="./assets/index-vigilancia.jpg" class="card-img-top" alt="UAV vigilancia">
                 <div class="card-body">
-                  <h5 class="card-title"><i class="bi bi-eye"></i> Vigilancia y reconocimiento</h5>
+                  <h5 class="card-title"><i class="bi bi-eye"></i> Vigilancia</h5>
                   <p class="card-text"><i class="bi bi-check"></i>Camara termica/IR & RGB</p>
                   <p class="card-text"><i class="bi bi-check"></i>Tiempo de vuelo mayor a 110 minutos</p>
                   <p class="card-text"><i class="bi bi-check"></i>Seguimiento automatico de objetivos</p>
@@ -140,12 +145,12 @@
               </div>
             </div>
           
-            <div class="col-md-4" style="padding: 10px;">
-              <div class="card bg-secondary" style="width: 100%;">
+            <div class="col-md-4" style="padding: 10px; height: 100%;">
+              <div class="card border-light" style="width: 100%;">
                 <img src="./assets/index-mapeo.jpg" class="card-img-top" alt="UAV mapeo">
                 <div class="card-body">
                   <h5 class="card-title"><i class="bi bi-globe2"></i> Mapeo</h5>
-                  <p class="card-text"><i class="bi bi-check"></i>Camaras RGB, multiespectral & termica/IR</p>
+                  <p class="card-text"><i class="bi bi-check"></i>Camaras RGB & multiespectral</p>
                   <p class="card-text"><i class="bi bi-check"></i>Tiempo de vuelo mayor a 110 minutos</p>
                   <p class="card-text"><i class="bi bi-check"></i>Cobertura hasta 1200HA</p>
                   <p class="card-text"><i class="bi bi-check"></i>Camara de hasta 61 megapixel</p>
@@ -155,15 +160,15 @@
             </div>
 
             <div class="col-md-4" style="padding: 10px;">
-              <div class="card bg-secondary" style="width: 100%;">
+              <div class="card border-light" style="width: 100%;">
                 <img src="./assets/index-cargo.jpg" class="card-img-top" alt="UAV cargo">
                 <div class="card-body">
                   <h5 class="card-title"><i class="bi bi-bag-plus"></i> Carga</h5>
                   <p class="card-text"><i class="bi bi-check"></i>Tiempo de vuelo mayor a 2 horas</p>
                   <p class="card-text"><i class="bi bi-check"></i>Carga util hasta 1.2kg</p>
                   <p class="card-text"><i class="bi bi-check"></i>Mecanismo de liberacion de la carga</p>
-                  <p class="card-text"><i class="bi bi-check"></i>Posible customizacion</p>
-                  <p class="card-text"><i class="bi bi-check"></i>Video FPV sin limite de distancia</p>
+                  <p class="card-text"><i class="bi bi-check"></i>Posible customizacion ampliada</p>
+                  <p class="card-text"><i class="bi bi-check"></i>Video FPV sin limite de distancia (LTE)</p>
                 </div>
               </div>
             </div>
@@ -173,7 +178,8 @@
         </section>
 
       <!--SECTION INDUSTRIAS-->
-        <h2 class="subtitulo__pagina">Explore las soluciones de nuestros UAV para su industria</h1>
+        <hr>
+        <h2 class="subtitulo__seccion">Explore las soluciones de nuestros UAV para su industria</h1>
         <section class="container" style="margin-top: 1rem;">
    
           <div class="row">

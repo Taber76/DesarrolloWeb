@@ -4,16 +4,17 @@ main{
     font-family: map-get($tema, fuentetitulos);
     margin-top: $margennav;
     .titulo__pagina{
-        color: map-get($tema, colorfondo);
-        background: map-get($tema, colortitulo);
+        color: map-get($tema, colorsubtitulo);
         opacity: 0.7;
         text-align: center;
     }
     .subtitulo__pagina{
-        color: map-get($tema, colorsubtitulo);
-        background: map-get($tema, colortitulo);
-        opacity: 0.7;
-        text-align: center;
+        @extend .titulo__pagina;
         margin-top: 3rem;
     }
+    .subtitulo__seccion{
+        @extend .titulo__pagina;
+        margin-top: 0rem;
+    }
+
 }

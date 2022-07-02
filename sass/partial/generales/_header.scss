@@ -1,22 +1,30 @@
 header{
     font-family: map-get($tema, fuentetitulos);
-    font-size: 1.5rem;
+    font-size: 1rem;
     nav{
-        background: linear-gradient(0deg, rgba(33,37,41,1) 0%, rgba(13,110,253,1) 100%);
+        background: map-get($tema, colornav);
         .header__logo{
             width: $tamanonav;
             height: $tamanonav;
-            filter: invert(1);
-        }
-                   
-         
+            filter: invert(0);
+        }   
         @include movil {
             justify-content: center;
         }
         .dropdown:hover .dropdown-menu {
                     display: block;
                     margin-top: 0; 
-        }   
+        }
+        p{
+            margin: 0;
+        }
+        ul{
+            li{
+                margin-right: 1.5rem;
+                margin-left: 1.5rem;
+                text-transform: uppercase;
+            }
+        }  
     }                  
  
 }
