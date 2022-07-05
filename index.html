@@ -18,32 +18,32 @@
         <!--NAVEGACION--> 
         <nav class="navbar fixed-top navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand animacionFooter" href="./index.html"><img src="./assets/Logo.png" alt="Logo" class="header__logo"></a>
-              <a class="navbar-brand animacionFooter" href="./index.html">SkyVision</a>
+              <a class="navbar-brand animacionNav" href="./index.html"><img src="./assets/Logo.png" alt="Logo" class="header__logo"></a>
+              <a class="navbar-brand animacionNav" href="./index.html">SkyVision</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 
                 <!--LISTA DE OPCIONES-->
-                <ul class="navbar-nav align-items-center">
-                  <li class="nav-item">
+                <ul class="navbar-nav navbar1 align-items-center">
+                  <li class="nav-item navbar1__item">
                     <a class="nav-link" href="./vistas/productos.html">PRODUCTOS</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-tooggle" aria-current="page" href="./vistas/soluciones.html" id="dropdownSoluciones" role="button"
+                  <li class="nav-item navbar1__item dropdown">
+                    <a class="nav-link dropdown-tooggle" aria-current="page" href="./vistas/soluciones.html" id="dropdownSoluciones" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false" style="text-align: center;">SOLUCIONES</a>
-                    <ul class="dropdown-menu bg-secondary" aria-labelledby="dropdownSoluciones">
+                    <ul class="dropdown-menu text-center navbar2" aria-labelledby="dropdownSoluciones">
                         <li><a class="dropdown-item" href="./vistas/soluciones.html#agricultura">Agricultura</a></li>
                         <li><a class="dropdown-item" href="./vistas/soluciones.html#infraestructuras">Infraestructuras</a></li>
                         <li><a class="dropdown-item" href="./vistas/soluciones.html#emergencias">Emergencias</a></li>
 			                  <li><a class="dropdown-item" href="./vistas/soluciones.html#vigilancia">Vigilancia</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item navbar1__item">
                     <a class="nav-link" href="./vistas/clientes.html">CLIENTES</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item navbar1__item">
                     <a class="nav-link" href="./vistas/contacto.html">CONTACTO</a>
                   </li>
                 </ul>
@@ -55,11 +55,11 @@
     </header>
  
    
-    <main>
+    <main class="main__index"> 
 
     <!--HERO SECTION-->    
         <section class="hero">
-            <div class="videoContainer">
+            <div class="">
                 <video style="width:100%;" src="./assets/videoHead.mp4" autoplay loop muted playsinline></video>        
             </div>
 
@@ -75,7 +75,7 @@
 
       <!--CAROUSEL-->
         <div class="container-lg containerIndex">
-          <div id="carouselExampleCaptions" class="carousel slide"  data-bs-ride="false">
+          <div id="carouselExampleCaptions" class="carousel slide"  data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -86,7 +86,7 @@
 
               <!--IMAGEN 1-->
               <div class="carousel-item active">
-                <img src="./assets/Vista aerea campo.jpg" class="imgCarouselIndex d-block w-100" alt="vista aera campo">
+                <img src="./assets/Vista aerea campo.jpg" class="imgCarouselIndex imgCar d-block w-100" alt="vista aera campo">
                 <div class="carousel-caption card-body d-md-block">
                   <h2 class="badge bg-dark text-wrap fw-normal containerIndex__titulo">AGRICULTURA</h2>
                   <h4 class="badge bg-dark text-wrap fw-normal containerIndex__subtitulo" style="--bs-bg-opacity: .6">Dotado de camaras multiespectrales y termicas se convierte en una herramienta muy eficaz para evaluar la productividad del suelo y analizar la salud de las plantaciones.</h4>
@@ -95,16 +95,16 @@
 
               <!--IMAGEN 2-->
               <div class="carousel-item">
-                <img src="./assets/linas electricas.jpg" class="imgCarouselIndex d-block w-100" alt="torre de alta tension">
+                <img src="./assets/linas electricas.jpg" class="imgCarouselIndex imgCar d-block w-100" alt="torre de alta tension">
                 <div class="carousel-caption  d-md-block">
-                  <h2 class="badge bg-dark text-wrap fw-normal containerIndex__titulo"">INFRAESTRUCTURA E INDUSTRIA</h2>
+                  <h2 class="badge bg-dark text-wrap fw-normal containerIndex__titulo"">SERVICIOS E INDUSTRIA</h2>
                   <h4 class="badge bg-dark text-wrap fw-normal containerIndex__subtitulo" style="--bs-bg-opacity: .6">Permite misiones autonomas de control e inspeccion en sitios remotos, lineas de alta tension, tuberias, vias ferreas, carreteras, etc.</h4>
                 </div>
               </div>
 
               <!--IMAGEN 3-->
               <div class="carousel-item">
-                <img src="./assets/busqueda y rescate.jpg" class="imgCarouselIndex d-block w-100" alt="vision termica">
+                <img src="./assets/busqueda y rescate.jpg" class="imgCarouselIndex imgCar d-block w-100" alt="vision termica">
                 <div class="carousel-caption  d-md-block">
                   <h2 class="badge bg-dark text-wrap fw-normal containerIndex__titulo"">BUSQUEDA Y VIGILANCIA</h2>
                   <h4 class="badge bg-dark text-wrap fw-normal containerIndex__subtitulo" style="--bs-bg-opacity: .6">Sus funciones inteligentes y su potente rendimiento permiten estrategias eficaces de busqueda, vigilancia y reconocimiento.</h4>
@@ -133,7 +133,7 @@
             
             <div class="col-md-4" style="padding: 10px;">
               <div class="card border-light" style="width: 100%;">
-                <img src="./assets/index-vigilancia.jpg" class="card-img-top" alt="UAV vigilancia">
+                <img src="./assets/index-vigilancia.jpg" class="card-img-top" alt="UAV vigilancia" style="max-height: 45vh; object-fit:contain">
                 <div class="card-body">
                   <h5 class="card-title"><i class="bi bi-eye"></i> Vigilancia</h5>
                   <p class="card-text"><i class="bi bi-check"></i>Camara termica/IR & RGB</p>
@@ -147,7 +147,7 @@
           
             <div class="col-md-4" style="padding: 10px; height: 100%;">
               <div class="card border-light" style="width: 100%;">
-                <img src="./assets/index-mapeo.jpg" class="card-img-top" alt="UAV mapeo">
+                <img src="./assets/index-mapeo.jpg" class="card-img-top" alt="UAV mapeo" style="max-height: 45vh; object-fit:contain">
                 <div class="card-body">
                   <h5 class="card-title"><i class="bi bi-globe2"></i> Mapeo</h5>
                   <p class="card-text"><i class="bi bi-check"></i>Camaras RGB & multiespectral</p>
@@ -161,7 +161,7 @@
 
             <div class="col-md-4" style="padding: 10px;">
               <div class="card border-light" style="width: 100%;">
-                <img src="./assets/index-cargo.jpg" class="card-img-top" alt="UAV cargo">
+                <img src="./assets/index-cargo.jpg" class="card-img-top" alt="UAV cargo" style="max-height: 45vh; object-fit:contain"">
                 <div class="card-body">
                   <h5 class="card-title"><i class="bi bi-bag-plus"></i> Carga</h5>
                   <p class="card-text"><i class="bi bi-check"></i>Tiempo de vuelo mayor a 2 horas</p>

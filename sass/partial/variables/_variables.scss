@@ -1,20 +1,25 @@
+// VARIABLES (camelCase)
+
 // tamano fuente responsive
-$textdesktop: 18px;
-$texttableth: 17px;
-$texttabletv: 16px;
-$textmovil: 15px;
+$textDesktop: 18px;
+$textTableth: 17px;
+$textTabletv: 16px;
+$textMovil: 15px;
 
 // fuentes y colores sitio
 $tema:(
-    fuentetitulos: 'Montserrat',
-    fuentetexto: 'Open Sans',
-    colorfondo: white,
-    colornav: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 95%, rgba(33,37,41,1) 100%),
-    colorsubtitulo: #1b1a27,
-    colortitulo: radial-gradient(circle, rgba(13,110,253,1) 0%, rgba(25,65,122,1) 30%, rgba(33,37,41,1) 69%, rgba(33,37,41,1) 100%),
+    fuenteTitulos: 'Montserrat',
+    fuenteTexto: 'Open Sans',
+    colorFondo: white,
+    colorNav: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 95%, rgba(33,37,41,1) 100%),
+    colorNav2: rgb(119, 117, 117),
+    colorSubtitulo: #1b1a27,
 );
 
 // tamano nav
-$tamanonav: 3rem;
-$margennav: $tamanonav + 1.5;
+$tamanoNav: 3rem;
+
+// padding main
+$paddingMain: $tamanoNav + 2;
+$paddingMainIndex: $tamanoNav + 1.5;
 

@@ -14,15 +14,15 @@
 html{
     font-size: 15px;
     @include desktop {
-        font-size: $textdesktop;
+        font-size: $textDesktop;
     }
     @include tableth {
-        font-size: $texttableth;
+        font-size: $textTableth;
     }
     @include tabletv {
-        font-size: $texttabletv;
+        font-size: $textTabletv;
     }
     @include movil {
-        font-size: $textmovil;
+        font-size: $textMovil;
     }
 }
