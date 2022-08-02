@@ -1,3 +1,4 @@
 # SkyVision
 
-Tabare Bermudez
+Proyecto de curso de Desarrollo Web de Coderhouse
+*basado en web DeltaQuad
